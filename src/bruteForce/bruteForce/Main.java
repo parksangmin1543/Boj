@@ -1,4 +1,4 @@
-package bru;
+package bruteForce.bruteForce;
 
 import java.util.Scanner;
 
