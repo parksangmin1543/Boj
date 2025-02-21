@@ -7,23 +7,16 @@ public class Main4 {
 		Scanner sc = new Scanner(System.in);
 		
 		int N = sc.nextInt();
-		int cnt = 0;
-		int div = N;
-		while (N > 5) {
-			div /= 5;
-			N %= 5;
-			cnt += div;
+		int divOne = 0, divTwo = 0, cnt = 0;
+		for (int i = 0; i < N; i++) {
+			// 5 1 -> 2 _> 3 ...
+			// 3 1-> 2-> 3-> ... 
+			//가장 적은수
+			for (int j = 0; j < N; j++) {
+				cnt = N / 5;
+				
+			}
 		}
-		div = N;
-		while (N > 2) {
-			div /= 3;
-			N %= 3;
-			cnt += div;
-		}
-		
-		if (N != 0)
-			cnt = -1;
-		
-		System.out.println(cnt);
+		System.out.println();
 	}
 }

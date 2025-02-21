@@ -1,5 +1,5 @@
 package bruteForce.bruteForce;
-//영화감독 숌
+//설탕배달
 import java.util.Scanner;
 
 public class Main6 {
@@ -7,16 +7,17 @@ public class Main6 {
 		Scanner sc = new Scanner(System.in);
 		
 		int N = sc.nextInt();
-		int cnt = 0;
-		for (int i = 0; i < Integer.MAX_VALUE; i++) {
-			String str = String.valueOf(i);
-			if (str.indexOf("666") != -1)
-				cnt++;
-			if (cnt == N) {
-				System.out.println(i);
-				break;
+		int ans = 0;
+		
+		while (N >= 0) {
+			if (N % 5 == 0) {
+				ans += (N / 5);
+				System.out.println(ans);
+				return ;
 			}
+			N -= 3;
+			ans++;
 		}
-			
+		System.out.println(-1);	
 	}
 }
