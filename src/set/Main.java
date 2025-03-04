@@ -23,7 +23,7 @@ public class Main {
 		setCopy.retainAll(set2);
 		
 		for (int i = 0; i < set2.size(); i++) {
-			if (set2.contains())
+			if (set2.contains(i));
 		}
 		System.out.println(setCopy);
 
